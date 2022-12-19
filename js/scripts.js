@@ -17,14 +17,14 @@ console.log('Costo del biglietto:', price, '€');
 let finalPrice = price;
 
 if(age < 18) {
-    finalPrice = ((price / 100) * 80).toFixed(2);
+    finalPrice = (price * 0.80).toFixed(2);
 }
 else if(age >= 65) {
-    finalPrice = ((price / 100) * 60).toFixed(2);
+    finalPrice = (price * 0.60).toFixed(2);
 }
 
 console.log('Costo biglietto con sconto:', finalPrice, '€');
 
-document.getElementById('km').innerHTML = 'Hai scelto di percorrere: ' + km + 'km';
+document.getElementById('km').innerHTML = 'Hai scelto di percorrere: ' + km + 'Km';
 document.getElementById('price').innerHTML = 'Il prezzo del tuo biglietto è: ' + price + ' €';
 document.getElementById('finalPrice').innerHTML = 'Il prezzo scontato del tuo biglietto è: ' + finalPrice + ' €';
