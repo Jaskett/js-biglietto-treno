@@ -1,0 +1,9 @@
+body {
+    background-color: lightblue;
+}
+
+.display {
+    border: 2px solid black;
+    background-color: white;
+    border-radius: 5px;
+}
